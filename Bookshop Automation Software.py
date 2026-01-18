@@ -123,10 +123,12 @@ def KK_access(employee_type):
     
     enter_button1=Button(KK_access_window, text="ENTER",bd=10, padx=50, pady=10, bg="lightgreen",command=lambda: check_kk_member(employee_type))
     enter_button1.place(x=350,y=500)
+    back_button1=Button(KK_access_window, text="BACK",bd=10, padx=50, pady=10, bg="lightgreen",command=lambda: backy(KK_access_window,KK_root))
+    back_button1.place(x=180,y=600)
     exit_button1=Button(KK_access_window ,text="EXIT",bd=10, padx=50, pady=10, bg="lightgreen",command=KK_access_window.destroy)
     exit_button1.place(x=520,y=600)
     
-    play_gif()
+    #play_gif()  # Disabled for faster loading
 
 
 
@@ -419,7 +421,7 @@ def search_author():
     global books_frame
     
 
-    reading_gif()
+    #reading_gif()  # Disabled for faster loading
     clear_func1()
     
     query="SELECT author_name FROM inventory;"
@@ -499,7 +501,7 @@ def search_book():
     
     
     
-    reading_gif()
+    #reading_gif()  # Disabled for faster loading
     clear_func1()
     
     query="SELECT title FROM inventory"
@@ -829,11 +831,11 @@ def cart_win():
         not_found_label1.place(x=200,y=150)
 
     back_button=Button(cart_window,text=" Back ",font=("Helvetica",9),relief=SUNKEN,borderwidth=5,padx=50,bg="green",command=lambda: backy(cart_window,root1))
-    back_button.place(x=200,y=647)
+    back_button.place(x=200,y=650)
     proceed_button=Button(cart_window,text=" PROCEED TO BUY ",font=("Helvetica",9),relief=SUNKEN,borderwidth=5,padx=5,bg="green",command=Checkout)
-    proceed_button.place(x=500,y=647)
+    proceed_button.place(x=500,y=650)
    
-    cart_image()
+    #cart_image()  # Disabled for performance
     
 
 def clear_func1():
@@ -1091,7 +1093,7 @@ def sales_window():
     print_button.place(x=500,y=50)
 
     Logout_button=Button(sales_win,text=" Back ",relief=SUNKEN,bg="red",command=lambda: backy(sales_win,KK_access_window), anchor=CENTER,padx=30,pady=10,font=(("Times New Roman",15)),borderwidth=5)
-    Logout_button.place(x=350,y=620)
+    Logout_button.place(x=320,y=530)
 
 def insert_stock():
     global stockist_name_emp
@@ -1313,8 +1315,8 @@ def employee_window():
     employee_win.title("Employee | BOOKSHOP AUTOMATION SYSTEM")
     update_label=Button(employee_win,text="Update Stock",relief=SUNKEN,padx=40,pady=5,borderwidth=2,bg="Violet",command=employee_work)
     update_label.place(x=230,y=90)
-    Logout_button=Button(employee_win,text=" Back ",relief=SUNKEN,bg="red",command=lambda: backy(employee_win,KK_root), anchor=CENTER,padx=30,pady=10,font=(("Times New Roman",15)),borderwidth=5)
-    Logout_button.place(x=250,y=680)
+    Logout_button=Button(employee_win,text=" Back ",relief=SUNKEN,bg="red",command=lambda: backy(employee_win,KK_access_window), anchor=CENTER,padx=30,pady=10,font=(("Times New Roman",15)),borderwidth=5)
+    Logout_button.place(x=320,y=530)
 
     return
     
@@ -1362,8 +1364,8 @@ def manager_view():
     else:
         not_found_label1=Label(request_field_frame,text="NOT FOUND i.e., NO DATA AVAILABLE",font=("Helvetica",12,"bold"),anchor=CENTER,bg="ivory3")
         not_found_label1.place(x=250,y=100)
-    Logout_button=Button(manager_win,text=" Back ",relief=SUNKEN,bg="red",command=lambda: backy(manager_win,KK_root), anchor=CENTER,padx=30,pady=10,font=(("Times New Roman",15)),borderwidth=5)
-    Logout_button.place(x=350,y=620)
+    Logout_button=Button(manager_win,text=" Back ",relief=SUNKEN,bg="red",command=lambda: backy(manager_win,KK_access_window), anchor=CENTER,padx=30,pady=10,font=(("Times New Roman",15)),borderwidth=5)
+    Logout_button.place(x=320,y=530)
     
 def manager_window():
     global manager_win
@@ -1485,8 +1487,8 @@ def owner_window():
 
     view_label=Button(owner_win,text="View Inventory Level & Below Threshold",relief=SUNKEN,padx=20,pady=7,borderwidth=5,bg="Violet",command=owner_work)
     view_label.place(x=270,y=20)
-    Logout_button=Button(owner_win,text=" Back ",relief=SUNKEN,bg="red",command=lambda: backy(owner_win,KK_root), anchor=CENTER,padx=30,pady=10,font=(("Times New Roman",15)),borderwidth=5)
-    Logout_button.place(x=350,y=620)
+    Logout_button=Button(owner_win,text=" Back ",relief=SUNKEN,bg="red",command=lambda: backy(owner_win,KK_access_window), anchor=CENTER,padx=30,pady=10,font=(("Times New Roman",15)),borderwidth=5)
+    Logout_button.place(x=320,y=530)
     
    
 def reading_gif():
@@ -1545,7 +1547,8 @@ def cart_image():
         except AttributeError:
             pass
     try:
-        cart_window.after(1500,cart_image())
+        #cart_window.after(1500,cart_image)  # Fixed but disabled
+        pass
     except TclError:
         pass
     except AttributeError:
@@ -1578,7 +1581,8 @@ def play_gif():
         except AttributeError:
             pass
     try:
-        KK_access_window.after(1500,play_gif())
+        #KK_access_window.after(1500,play_gif)  # Fixed but disabled
+        pass
 
     except TclError:
         pass
