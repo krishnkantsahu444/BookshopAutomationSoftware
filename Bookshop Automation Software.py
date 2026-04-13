@@ -40,10 +40,10 @@ def root_access():
     rootaccess=Tk()
     rootaccess.configure(bg="orange")
     rootaccess.geometry('800x680')
-    rootaccess.iconbitmap('Bookshop_icon_2.ico')
+    rootaccess.iconbitmap('media/Bookshop_icon_2.ico')
     
     # Create Image Widget
-    Bookshop_img_access=ImageTk.PhotoImage((Image.open("Bookshop_img2.jpeg")).resize((320,300)))
+    Bookshop_img_access=ImageTk.PhotoImage((Image.open("media/Bookshop_img2.jpeg")).resize((320,300)))
     #Bookshop_img_access=Bookshop_img_access.resize((300,300))
     # text label-Shop name
     text_label_access=Label(rootaccess,text="KK Book Store",font=('Helvatical bold',50),relief=SUNKEN,bg='ivory3')
@@ -95,7 +95,7 @@ def KK_access(employee_type):
     KK_access_window.geometry('800x680')
 
     # Displaying Icon
-    KK_access_window.iconbitmap('Bookshop_icon_2.ico')
+    KK_access_window.iconbitmap('media/Bookshop_icon_2.ico')
     
      # title
     KK_access_window.title("KK_access | BOOKSHOP AUTOMATION SYSTEM")
@@ -196,7 +196,7 @@ def KK_Member():
     KK_root.geometry('800x680')
 
     # Displaying Icon
-    KK_root.iconbitmap('Bookshop_icon_2.ico')
+    KK_root.iconbitmap('media/Bookshop_icon_2.ico')
     
      # title
     KK_root.title("KK_Member | BOOKSHOP AUTOMATION SYSTEM")
@@ -239,10 +239,10 @@ def customer_window():
     # Geometry or dimensions of root Window
     root.geometry('800x680')
     # Displaying Icon
-    root.iconbitmap('Bookshop_icon_2.ico')
+    root.iconbitmap('media/Bookshop_icon_2.ico')
     
     # Create Image Widget
-    Bookshop_img=ImageTk.PhotoImage((Image.open("Bookshop_img.png")).resize((320,300)))
+    Bookshop_img=ImageTk.PhotoImage((Image.open("media/Bookshop_img.png")).resize((320,300)))
     
      # title
     root.title("Customer_Window | BOOKSHOP AUTOMATION SYSTEM")
@@ -357,7 +357,7 @@ def books():
     root1.title("Books Window | BOOKSHOP AUTOMATION SYSTEM")
     # colour
     root1.configure(bg="orange")
-    root1.iconbitmap('Bookshop_icon_2.ico')
+    root1.iconbitmap('media/Bookshop_icon_2.ico')
 
     text_label=Label(root1,text="KK Book Store",font=('Helvatical bold',50),relief=SUNKEN,bg='ivory3',padx=70)
     text_label.grid(row=0,column=0,columnspan=4,sticky=W+E,padx=30)
@@ -739,7 +739,7 @@ def Request_func():
     request_win=Toplevel()
     request_win.configure(bg="orange")
     request_win.geometry('600x500')
-    request_win.iconbitmap('Bookshop_icon_2.ico')
+    request_win.iconbitmap('media/Bookshop_icon_2.ico')
     
     request_field_label=Label(request_win,text="Enter details fro procurement",bg='violet',padx=20,relief=SUNKEN,borderwidth=5)
     request_field_label.place(x=5,y=120)
@@ -785,7 +785,7 @@ def cart_win():
     # Geometry or dimensions of root Window
     cart_window.geometry('800x680')
     # Displaying Icon
-    cart_window.iconbitmap('Bookshop_icon_2.ico')
+    cart_window.iconbitmap('media/Bookshop_icon_2.ico')
     
     books_frame1=Frame(cart_window,padx=5,pady=5,bg="coral")
     books_frame1.place(x=50,y=290,height=350,width=700)
@@ -1007,7 +1007,7 @@ def Invoice():
     # Geometry or dimensions of root Window
     Invoice_win.geometry('800x680')
     # Displaying Icon
-    Invoice_win.iconbitmap('Bookshop_icon_2.ico')
+    Invoice_win.iconbitmap('media/Bookshop_icon_2.ico')
      # title
     Invoice_win.title("Invoice | BOOKSHOP AUTOMATION SYSTEM")
 
@@ -1082,7 +1082,7 @@ def sales_window():
     # Geometry or dimensions of root Window
     sales_win.geometry('800x680')
     # Displaying Icon
-    sales_win.iconbitmap('Bookshop_icon_2.ico')
+    sales_win.iconbitmap('media/Bookshop_icon_2.ico')
      # title
     sales_win.title(" Sales Clerk | BOOKSHOP AUTOMATION SYSTEM")
     
@@ -1309,7 +1309,7 @@ def employee_window():
     # Geometry or dimensions of root Window
     employee_win.geometry('650x750')
     # Displaying Icon
-    employee_win.iconbitmap('Bookshop_icon_2.ico')
+    employee_win.iconbitmap('media/Bookshop_icon_2.ico')
     
      # title
     employee_win.title("Employee | BOOKSHOP AUTOMATION SYSTEM")
@@ -1379,7 +1379,7 @@ def manager_window():
     # Geometry or dimensions of root Window
     manager_win.geometry('800x680')
     # Displaying Icon
-    manager_win.iconbitmap('Bookshop_icon_2.ico')
+    manager_win.iconbitmap('media/Bookshop_icon_2.ico')
     
      # title
     manager_win.title("Manager | BOOKSHOP AUTOMATION SYSTEM")
@@ -1480,7 +1480,7 @@ def owner_window():
     # Geometry or dimensions of root Window
     owner_win.geometry('800x680')
     # Displaying Icon
-    owner_win.iconbitmap('Bookshop_icon_2.ico')
+    owner_win.iconbitmap('media/Bookshop_icon_2.ico')
     
      # title
     owner_win.title("Owner | BOOKSHOP AUTOMATION SYSTEM")
@@ -1503,7 +1503,7 @@ def reading_gif():
     # Geometry or dimensions of root Window
     gif_display.geometry('800x400')
     # Displaying Icon
-    gif_display.iconbitmap('Bookshop_icon_2.ico')
+    gif_display.iconbitmap('media/Bookshop_icon_2.ico')
     
     load_gif=Label(gif_display,bg="ivory3")
     load_gif.pack(padx=20,pady=20)

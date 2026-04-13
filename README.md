@@ -120,25 +120,25 @@ python "Bookshop Automation Software.py"
 ## 🖼️ Screenshots
 
 ### Main Window
-![Main Window](main.png)
+![Main Window](screenshots/main.png)
 
 ### Customer Details Entry
-![Customer Details](customer%20details.png)
+![Customer Details](screenshots/customer%20details.png)
 
 ### Book Search
-![Search Book](search%20book%20by%20its%20name.png)
+![Search Book](screenshots/search%20book%20by%20its%20name.png)
 
 ### Shopping Cart
-![Cart Details](card%20details.png)
+![Cart Details](screenshots/card%20details.png)
 
 ### Manager Sign In
-![Manager Login](manager%20signin.png)
+![Manager Login](screenshots/manager%20signin.png)
 
 ### Sales Clerk Approval
-![Checklist](checklist%20approved%20by%20sles%20cleark.png)
+![Checklist](screenshots/checklist%20approved%20by%20sles%20cleark.png)
 
 ### Sales Invoice
-![Invoice](slip%20invoice.png)
+![Invoice](screenshots/slip%20invoice.png)
 
 ---
 
@@ -163,7 +163,7 @@ python "Bookshop Automation Software.py"
 
 ## 🔧 Configuration Notes
 
-- Ensure all required image/icon files (e.g., `Bookshop_img2.jpeg`, `Bookshop_icon_2.ico`) are present in the working directory
+- Ensure all required image/icon files (e.g., Bookshop_img2.jpeg, Bookshop_icon_2.ico) are present in the media/ directory
 - The application currently uses MySQL
 - Can be adapted to SQLite for lightweight local testing
 
